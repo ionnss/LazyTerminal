@@ -1,4 +1,4 @@
-# LazyTerminal
+# Lazy Terminal
 
 ![LazyTerminal Logo](static/logo.png)
 
