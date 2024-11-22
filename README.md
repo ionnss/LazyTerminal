@@ -12,7 +12,7 @@
 - **Token Management:**
   - Automatically saves your OpenAI API token in a `.env` file.
   - Update the token anytime using the `lzt -ut` command.
-- **Build Executable:** Compile the project into a single executable file for ease of use.
+- **Global Command Installation:** Make `lzt` a global command for convenience.
 - **Customizable:** Ready for enhancements like advanced configurations and logging.
 
 ---
@@ -32,47 +32,45 @@
 
 ## Requirements
 
-- **Go**: Version 1.23 or newer.
+- **Go**: Version 1.17 or newer.
 - **OpenAI API Key:** Obtain your key from [OpenAI's API platform](https://platform.openai.com/).
 
 ---
 
 ## Installation
 
-1. **Clone the Repository**:
+### **Clone the Repository**
+```bash
+git clone https://github.com/your-username/lazyterminal.git
+cd lazyterminal
+```
+
+### **Install Dependencies**
+```bash
+go mod tidy
+```
+
+### **Build the Executable**
+Create the executable file for LazyTerminal:
+```bash
+go build -o lzt
+```
+
+### **Install as a Global Command**
+1. Move the executable to a directory in your system's `PATH`:
+   - On Linux/macOS:
+     ```bash
+     sudo mv lzt /usr/local/bin/
+     ```
+   - On Windows:
+     Add the directory containing the `lzt` executable to your system's `Path` environment variable.
+
+2. Test the command:
    ```bash
-   git clone https://github.com/your-username/lazyterminal.git
-   cd lazyterminal
+   lzt "This is a test"
    ```
 
-2. **Install Dependencies**:
-   ```bash
-   go mod tidy
-   ```
-
-3. **Set Up Your API Token**:
-   - When prompted during the program execution, provide your OpenAI API token.
-   - It will be saved automatically in a `.env` file for future use.
-
----
-
-## Building the Executable
-
-To create a standalone executable file for LazyTerminal:
-
-1. **Run the Build Command**:
-   ```bash
-   go build -o lazyterminal
-   ```
-
-   This will generate an executable named `lazyterminal` in the project directory.
-
-2. **Run the Executable**:
-   ```bash
-   ./lazyterminal
-   ```
-
-   Now you can use LazyTerminal without needing to run it through `go run`.
+Now, `lzt` is accessible globally as a terminal command.
 
 ---
 
@@ -120,9 +118,16 @@ exit
    - If you see the error `You exceeded your current quota`, check your OpenAI account usage and ensure your API key has sufficient credits.
 
 2. **Permission Issues Running Executable**:
-   - If you cannot execute the `lazyterminal` file, ensure it has execute permissions:
+   - If you cannot execute the `lzt` file, ensure it has execute permissions:
      ```bash
-     chmod +x lazyterminal
+     chmod +x lzt
+     ```
+
+3. **Command Not Found (Global Command)**:
+   - Ensure the `lzt` executable is in a directory listed in your system's `PATH`.
+   - Verify your `PATH` configuration:
+     ```bash
+     echo $PATH
      ```
 
 ---
@@ -155,4 +160,4 @@ This project is licensed under the MIT License. See the [LICENSE](https://openso
 
 ---
 
-If further updates or adjustments are needed, let me know! 😊
+Let me know if there’s anything else you’d like to modify or add! 🚀
