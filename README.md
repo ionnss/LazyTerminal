@@ -2,7 +2,20 @@
 
 ![LazyTerminal Logo](static/logo.png)
 
-**LazyTerminal** is a simple and fun CLI tool that allows users to send queries to OpenAI's ChatGPT directly from their terminal. Designed with simplicity in mind, it includes features like token management and a sloth mascot for added charm.
+**LazyTerminal** is a simple and efficient command-line interface (CLI) tool designed to interact with OpenAI's ChatGPT directly from your terminal. With **LazyTerminal**, you can send queries and receive intelligent responses without relying on additional applications or unnecessary logins.
+
+---
+
+## Features
+
+- **Send Queries:** Use the `lzt` command to ask ChatGPT questions directly.
+- **Token Management:**
+  - Automatically saves your OpenAI API token in a `.env` file.
+  - Update the token anytime using the `lzt -ut` command.
+- **Build Executable:** Compile the project into a single executable file for ease of use.
+- **Customizable:** Ready for enhancements like advanced configurations and logging.
+
+---
 
 ## Project Structure
 
@@ -14,16 +27,6 @@
 └── static
     └── logo.png      # Project logo (a cute sloth!)
 ```
-
----
-
-## Features
-
-- **Send Queries:** Use the `lzt` command to ask ChatGPT questions directly.
-- **Token Management:**
-  - Automatically saves your OpenAI API token in a `.env` file.
-  - Update the token anytime using the `lzt -ut` command.
-- **Customizable:** Ready for enhancements like advanced configurations and logging.
 
 ---
 
@@ -48,18 +51,42 @@
    ```
 
 3. **Set Up Your API Token**:
-   - When prompted, provide your OpenAI API token. It will be saved in a `.env` file for future use.
+   - When prompted during the program execution, provide your OpenAI API token.
+   - It will be saved automatically in a `.env` file for future use.
 
-4. **Run the Application**:
+---
+
+## Building the Executable
+
+To create a standalone executable file for LazyTerminal:
+
+1. **Run the Build Command**:
    ```bash
-   go run main.go
+   go build -o lazyterminal
    ```
+
+   This will generate an executable named `lazyterminal` in the project directory.
+
+2. **Run the Executable**:
+   ```bash
+   ./lazyterminal
+   ```
+
+   Now you can use LazyTerminal without needing to run it through `go run`.
 
 ---
 
 ## Usage
 
-### **Basic Command**
+### **Initial Setup: Insert Your OpenAI API Token**
+When you first run the program, it will ask you to input your OpenAI API token:
+```bash
+Enter your OpenAI API token: sk-xxxxxx
+```
+
+Once provided, the token will be securely saved in the `.env` file for future use.
+
+### **Send Queries**
 Ask a question using the `lzt` command:
 ```bash
 lzt "What is the capital of France?"
@@ -85,10 +112,18 @@ exit
 
 ---
 
-## Customization
+## Troubleshooting
 
-- **Logo:** A playful sloth logo (`static/logo.png`) is included for branding.
-- **API Parameters:** The model used is `gpt-3.5-turbo` by default. You can modify the `api.go` file to support other models.
+### Common Errors
+
+1. **Exceeded API Quota**:
+   - If you see the error `You exceeded your current quota`, check your OpenAI account usage and ensure your API key has sufficient credits.
+
+2. **Permission Issues Running Executable**:
+   - If you cannot execute the `lazyterminal` file, ensure it has execute permissions:
+     ```bash
+     chmod +x lazyterminal
+     ```
 
 ---
 
@@ -115,6 +150,9 @@ This project is licensed under the MIT License. See the [LICENSE](https://openso
 
 ## Credits
 
-- **Developed by:** [ionnss](https://www.github.com/ionnss)
+- **Developed by:** [ionnss - Leonardo Zara](https://github.com/ionnss)
 - **Mascot Design:** A curious and playful sloth in `static/logo.png`.
 
+---
+
+If further updates or adjustments are needed, let me know! 😊
