@@ -32,7 +32,7 @@
 
 ## Requirements
 
-- **Go**: Version 1.17 or newer.
+- **Go**: Version 1.23 or newer.
 - **OpenAI API Key:** Obtain your key from [OpenAI's API platform](https://platform.openai.com/).
 
 ---
