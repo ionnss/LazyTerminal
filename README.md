@@ -102,7 +102,7 @@ The program will respond with:
 LazyTerminal > The capital of Brazil is Brasília.
 ```
 
-### **Update Token**
+### **Update API'S Token**
 If you need to update your API token, use the `lzt -ut` command:
 ```bash
 lzt -ut
