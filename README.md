@@ -89,12 +89,12 @@ Once provided, the token will be securely saved in the `.env` file for future us
 ### **Send Queries**
 Ask a question using the `lzt` command:
 ```bash
-lzt "What is the capital of France?"
+lzt "What is the capital of Brazil?"
 ```
 
 The program will respond with:
 ```bash
-LazyTerminal > The capital of France is Paris.
+LazyTerminal > The capital of Brazil is Brasília.
 ```
 
 ### **Update Token**
