@@ -1,5 +1,12 @@
 # Lazy Terminal
-
+![Go](https://img.shields.io/badge/Language-Go-blue)
+![License](https://img.shields.io/badge/License-MIT-green)
+![Platforms](https://img.shields.io/badge/Platforms-Linux%20%7C%20macOS%20%7C%20Windows-lightgrey)
+![Status](https://img.shields.io/badge/Status-Stable-brightgreen)
+![Version](https://img.shields.io/badge/Version-1.0.0-blue)
+![Contributions](https://img.shields.io/badge/Contributions-Welcome-orange)
+![Repo Size](https://img.shields.io/github/repo-size/ionnss/LazyTerminal)
+![Last Commit](https://img.shields.io/github/last-commit/ionnss/LazyTerminal)
 ![LazyTerminal Logo](static/logo.png)
 
 **LazyTerminal** is a simple and efficient command-line interface (CLI) tool designed to interact with OpenAI's ChatGPT directly from your terminal. With **LazyTerminal**, you can send queries and receive intelligent responses without relying on additional applications or unnecessary logins.
