@@ -12,6 +12,15 @@
 
 **LazyTerminal** is a simple and efficient command-line interface (CLI) tool designed to interact with OpenAI's ChatGPT directly from your terminal. With **LazyTerminal**, you can send queries and receive intelligent responses without relying on additional applications or unnecessary logins.
 
+
+**Recommended Usage**
+
+Use LazyTerminal for quick and straightforward questions, such as:  
+- "What is the command to build a Docker image?"  
+- "How do I merge two branches in Git?"  
+- "What’s the best way to delete a file in Linux?"  
+- "How do I create a virtual environment in Python?"  
+
 ---
 
 ## Features
