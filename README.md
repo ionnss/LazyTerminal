@@ -21,6 +21,8 @@ Use LazyTerminal for quick and straightforward questions, such as:
 - "What’s the best way to delete a file in Linux?"  
 - "How do I create a virtual environment in Python?"  
 
+While inspired by WARP, LazyTerminal is not meant for building entire applications with an LLM. Keep it simple and efficient.  
+
 ---
 
 ## Features
